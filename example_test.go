@@ -9,7 +9,7 @@ import (
 
 	"github.com/infogulch/fontutil"
 
-	"code.google.com/p/freetype-go/freetype"
+	"github.com/golang/freetype"
 )
 
 var font = fontutil.Must(fontutil.FindAndParse("Arial"))
@@ -39,5 +39,5 @@ func Example() {
 	out := fnv.New64()
 	_ = png.Encode(out, dst)
 	fmt.Printf("Hash of compressed image: %x", out.Sum64())
-	// Output: Hash of compressed image: 2bbf3be4499fb96c
+	// Output: Hash of compressed image: fa83a1b8d8abf5f2
 }

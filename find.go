@@ -3,8 +3,8 @@ package fontutil
 import (
 	"io/ioutil"
 
-	"code.google.com/p/freetype-go/freetype"
-	"code.google.com/p/freetype-go/freetype/truetype"
+	"github.com/golang/freetype"
+	"github.com/golang/freetype/truetype"
 )
 
 // Find is a platform-agnostic way to locate font files installed on the system by name.
